@@ -47,7 +47,7 @@ while(pregunta == true)
 	
 	edadPasajero = prompt("Ingresar una edad mayor a 0","0");
 	edadPasajero = parseInt(edadPasajero);
-	while(edadPasajero < 1)
+	while(isNaN(edadPasajero) || edadPasajero < 1)
 	{
 		edadPasajero = prompt("Error, ingresar una edad mayor a 0","0");
 		edadPasajero = parseInt(edadPasajero);
